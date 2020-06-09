@@ -1,0 +1,16 @@
+<h2>メールフォーム</h2>
+<%= form_for(@contact) do |f| %>
+  <div class="field row">
+    <%= f.label :subject %>
+    <%= f.text_field :subject, class: 'col-xs-12 book_title' %>
+  </div>
+
+  <div class="field row">
+    <%= f.label :message %>
+    <%= f.text_area :message, class: 'col-xs-12 book_body'%>
+  </div>
+
+  <div class="actions row">
+    <%= f.submit class: 'btn btn-primary col-xs-12'%>
+  </div>
+<% end %>

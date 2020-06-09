@@ -12,4 +12,5 @@ Rails.application.routes.draw do
  	resource :book_comments, only: [:create, :destroy]
  	resource :favorites, only: [:create, :destroy]
  end
+ resources :contacts, only: [:new, :create, :index]
 end
